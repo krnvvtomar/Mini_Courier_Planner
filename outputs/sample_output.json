@@ -190,9 +190,9 @@
     ]
   },
   "runtime_seconds": {
-    "Sorting": 0.0021936000557616353,
-    "Knapsack DP": 4.2199972085654736e-05,
-    "Dijkstra": 2.4700071662664413e-05,
-    "Nearest-neighbour TSP": 7.790001109242439e-05
+    "Sorting": 0.0026088999584317207,
+    "Knapsack DP": 4.4899992644786835e-05,
+    "Dijkstra": 2.789997961372137e-05,
+    "Nearest-neighbour TSP": 9.510002564638853e-05
   }
 }

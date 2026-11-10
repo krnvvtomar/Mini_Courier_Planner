@@ -29,9 +29,9 @@ DEPOT -> A -> B -> D -> F -> E -> DEPOT
 Total tour distance (including return to depot): 29.0 km
 
 5. MODULE RUNTIMES
-Sorting: 2.1936 ms
-Knapsack DP: 0.0422 ms
-Dijkstra: 0.0247 ms
-Nearest-neighbour TSP: 0.0779 ms
+Sorting: 2.6089 ms
+Knapsack DP: 0.0449 ms
+Dijkstra: 0.0279 ms
+Nearest-neighbour TSP: 0.0951 ms
 
 Note: Runtime values depend on the computer and current system load.
