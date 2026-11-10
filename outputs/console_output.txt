@@ -1,0 +1,37 @@
+============================================================
+              MINI-COURIER PLANNER
+============================================================
+
+1. PARCEL PRIORITIZATION (earliest deadline first)
+P01: HIGH, deadline 10:30, 5 kg, destination A
+P03: HIGH, deadline 11:00, 8 kg, destination C
+P02: MEDIUM, deadline 12:00, 3 kg, destination B
+P05: HIGH, deadline 13:00, 6 kg, destination E
+P06: MEDIUM, deadline 14:00, 4 kg, destination F
+P07: MEDIUM, deadline 15:00, 7 kg, destination G
+P04: LOW, deadline 16:00, 2 kg, destination D
+P08: LOW, deadline 17:00, 3 kg, destination H
+
+2. OPTIMAL PACKING (0/1 Knapsack DP)
+P01 -> A (5 kg)
+P02 -> B (3 kg)
+P05 -> E (6 kg)
+P06 -> F (4 kg)
+P04 -> D (2 kg)
+Total weight: 20/20 kg
+Total parcel value: 350
+
+3. DIJKSTRA SHORTEST-PATH EXAMPLE
+To A: 4.0 km | Path: DEPOT -> A
+
+4. NEAREST-NEIGHBOUR DELIVERY TOUR
+DEPOT -> A -> B -> D -> F -> E -> DEPOT
+Total tour distance (including return to depot): 29.0 km
+
+5. MODULE RUNTIMES
+Sorting: 2.1936 ms
+Knapsack DP: 0.0422 ms
+Dijkstra: 0.0247 ms
+Nearest-neighbour TSP: 0.0779 ms
+
+Note: Runtime values depend on the computer and current system load.

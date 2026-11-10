@@ -1,0 +1,198 @@
+{
+  "prioritized_parcels": [
+    {
+      "parcel_id": "P01",
+      "weight_kg": "5",
+      "value": "90",
+      "priority": "HIGH",
+      "deadline": "10:30",
+      "destination": "A"
+    },
+    {
+      "parcel_id": "P03",
+      "weight_kg": "8",
+      "value": "120",
+      "priority": "HIGH",
+      "deadline": "11:00",
+      "destination": "C"
+    },
+    {
+      "parcel_id": "P02",
+      "weight_kg": "3",
+      "value": "55",
+      "priority": "MEDIUM",
+      "deadline": "12:00",
+      "destination": "B"
+    },
+    {
+      "parcel_id": "P05",
+      "weight_kg": "6",
+      "value": "100",
+      "priority": "HIGH",
+      "deadline": "13:00",
+      "destination": "E"
+    },
+    {
+      "parcel_id": "P06",
+      "weight_kg": "4",
+      "value": "70",
+      "priority": "MEDIUM",
+      "deadline": "14:00",
+      "destination": "F"
+    },
+    {
+      "parcel_id": "P07",
+      "weight_kg": "7",
+      "value": "95",
+      "priority": "MEDIUM",
+      "deadline": "15:00",
+      "destination": "G"
+    },
+    {
+      "parcel_id": "P04",
+      "weight_kg": "2",
+      "value": "35",
+      "priority": "LOW",
+      "deadline": "16:00",
+      "destination": "D"
+    },
+    {
+      "parcel_id": "P08",
+      "weight_kg": "3",
+      "value": "45",
+      "priority": "LOW",
+      "deadline": "17:00",
+      "destination": "H"
+    }
+  ],
+  "selected_parcels": [
+    {
+      "parcel_id": "P01",
+      "weight_kg": "5",
+      "value": "90",
+      "priority": "HIGH",
+      "deadline": "10:30",
+      "destination": "A"
+    },
+    {
+      "parcel_id": "P02",
+      "weight_kg": "3",
+      "value": "55",
+      "priority": "MEDIUM",
+      "deadline": "12:00",
+      "destination": "B"
+    },
+    {
+      "parcel_id": "P05",
+      "weight_kg": "6",
+      "value": "100",
+      "priority": "HIGH",
+      "deadline": "13:00",
+      "destination": "E"
+    },
+    {
+      "parcel_id": "P06",
+      "weight_kg": "4",
+      "value": "70",
+      "priority": "MEDIUM",
+      "deadline": "14:00",
+      "destination": "F"
+    },
+    {
+      "parcel_id": "P04",
+      "weight_kg": "2",
+      "value": "35",
+      "priority": "LOW",
+      "deadline": "16:00",
+      "destination": "D"
+    }
+  ],
+  "packing": {
+    "capacity_kg": 20,
+    "used_capacity_kg": 20,
+    "total_value": 350
+  },
+  "dijkstra_example": {
+    "destination": "A",
+    "distance_km": 4.0,
+    "path": [
+      "DEPOT",
+      "A"
+    ]
+  },
+  "delivery_tour": {
+    "stop_order": [
+      "DEPOT",
+      "A",
+      "B",
+      "D",
+      "F",
+      "E",
+      "DEPOT"
+    ],
+    "total_distance_km": 29.0,
+    "legs": [
+      {
+        "from": "DEPOT",
+        "to": "A",
+        "distance_km": 4.0,
+        "path": [
+          "DEPOT",
+          "A"
+        ]
+      },
+      {
+        "from": "A",
+        "to": "B",
+        "distance_km": 3.0,
+        "path": [
+          "A",
+          "B"
+        ]
+      },
+      {
+        "from": "B",
+        "to": "D",
+        "distance_km": 6.0,
+        "path": [
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      {
+        "from": "D",
+        "to": "F",
+        "distance_km": 4.0,
+        "path": [
+          "D",
+          "F"
+        ]
+      },
+      {
+        "from": "F",
+        "to": "E",
+        "distance_km": 2.0,
+        "path": [
+          "F",
+          "E"
+        ]
+      },
+      {
+        "from": "E",
+        "to": "DEPOT",
+        "distance_km": 10.0,
+        "path": [
+          "E",
+          "DEPOT"
+        ]
+      }
+    ]
+  },
+  "runtime_seconds": {
+    "Sorting": 0.0021936000557616353,
+    "Knapsack DP": 4.2199972085654736e-05,
+    "Dijkstra": 2.4700071662664413e-05,
+    "Nearest-neighbour TSP": 7.790001109242439e-05
+  }
+}

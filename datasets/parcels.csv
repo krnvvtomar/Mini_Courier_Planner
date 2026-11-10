@@ -1,0 +1,9 @@
+parcel_id,weight_kg,value,priority,deadline,destination
+P01,5,90,HIGH,10:30,A
+P02,3,55,MEDIUM,12:00,B
+P03,8,120,HIGH,11:00,C
+P04,2,35,LOW,16:00,D
+P05,6,100,HIGH,13:00,E
+P06,4,70,MEDIUM,14:00,F
+P07,7,95,MEDIUM,15:00,G
+P08,3,45,LOW,17:00,H
